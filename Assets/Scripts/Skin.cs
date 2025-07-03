@@ -2,16 +2,16 @@ using UnityEngine;
 
 public class Skin : MonoBehaviour
 {
-    public Material ClearMaterial;
     public Material RegMaterial;
-    bool visible = true;
+    public Material FleshMaterial;
+    public Material BoneMaterial;
 
     public void ToggleVisiblity() {
-        if (visible) {
-            this.GetComponent<MeshRenderer>().material = ClearMaterial;
-        } else {
-            this.GetComponent<MeshRenderer>().material = RegMaterial;
+        this.GetComponent<MeshRenderer>().material = RegMaterial;
+        GameObject[] organs = GameObject.FindGameObjectsWithTag("Organs");
+        foreach (GameObject organ in organs) {
+            organ.GetComponent<MeshRenderer>().material = FleshMaterial;
         }
-        visible = !visible;
+        GameObject.Find("Bone").GetComponent<MeshRenderer>().material = BoneMaterial;
     }
 }

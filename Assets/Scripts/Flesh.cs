@@ -4,18 +4,16 @@ public class Flesh : MonoBehaviour
 {
     public Material ClearMaterial;
     public Material RegMaterial;
-    bool visible = true;
+    public Material TransMaterial;
 
     public void ToggleVisiblity()
     {
-        if (visible)
+        GameObject[] organs = GameObject.FindGameObjectsWithTag("Organs");
+        foreach (GameObject organ in organs)
         {
-            this.GetComponent<MeshRenderer>().material = ClearMaterial;
+            organ.GetComponent<MeshRenderer>().material = RegMaterial;
         }
-        else
-        {
-            this.GetComponent<MeshRenderer>().material = RegMaterial;
-        }
-        visible = !visible;
+        GameObject.Find("Skin").GetComponent<MeshRenderer>().material = ClearMaterial;
+        GameObject.Find("Bone").GetComponent<MeshRenderer>().material = TransMaterial;
     }
 }
