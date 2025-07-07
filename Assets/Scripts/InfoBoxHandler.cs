@@ -65,15 +65,15 @@ public class InfoBoxHandler : MonoBehaviour, IPointerEnterHandler, IPointerExitH
             // ORGANS & ANATOMY
             case "Heart":
                 tmp_title_text.text = "Heart: Pumps blood to rest of circulatory system";
-                break;
+                return;
             case "Stomach":
                 tmp_title_text.text = "Stomach: Digests food";
-                break;
-
-            default:
-                tmp_title_text.text = "Mouse Dissection Mockup";
-                break;
+                return;
+            case "Intestines":
+                tmp_title_text.text = "Intestines: Site of nutrient and ion absorption";
+                return;
         }
+        tmp_title_text.text = "Mouse Dissection Mockup";
     }
 
     public void OnPointerExit(PointerEventData eventData) {

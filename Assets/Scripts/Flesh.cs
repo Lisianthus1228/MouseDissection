@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Flesh : MonoBehaviour
 {
@@ -9,17 +10,12 @@ public class Flesh : MonoBehaviour
 
     public void ToggleVisiblity()
     {
-        GameObject[] organs = GameObject.FindGameObjectsWithTag("Organs");
-        foreach (GameObject organ in organs)
-        {
-            organ.GetComponent<MeshRenderer>().material = RegMaterial;
-            organ.GetComponent<Collider>().enabled = true;
-        }
-
-        GameObject.Find("Skin").GetComponent<MeshRenderer>().material = ClearMaterial;
-        GameObject.Find("Skin").GetComponent<Collider>().enabled = false;
+        GameObject.Find("Uncut").GetComponent<MeshRenderer>().material = ClearMaterial;
+        GameObject.Find("Uncut").GetComponent<Collider>().enabled = false;
 
         GameObject.Find("Bone").GetComponent<MeshRenderer>().material = TransMaterial;
         GameObject.Find("Bone").GetComponent<Collider>().enabled = false;
+
+        GameObject.Find("VisibilitySlider").GetComponent<Slider>().value = 1;
     }
 }

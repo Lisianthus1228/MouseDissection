@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Bone : MonoBehaviour
 {
@@ -12,14 +13,9 @@ public class Bone : MonoBehaviour
         this.GetComponent<MeshRenderer>().material = RegMaterial;
         this.GetComponent<Collider>().enabled = true;
 
-        GameObject.Find("Skin").GetComponent<MeshRenderer>().material = ClearMaterial;
-        GameObject.Find("Skin").GetComponent<Collider>().enabled = false;
+        GameObject.Find("Uncut").GetComponent<MeshRenderer>().material = ClearMaterial;
+        GameObject.Find("Uncut").GetComponent<Collider>().enabled = false;
 
-        GameObject[] organs = GameObject.FindGameObjectsWithTag("Organs");
-        foreach (GameObject organ in organs)
-        {
-            organ.GetComponent<MeshRenderer>().material = TransMaterial;
-            organ.GetComponent<Collider>().enabled = false;
-        }
+        GameObject.Find("VisibilitySlider").GetComponent<Slider>().value = 1;
     }
 }

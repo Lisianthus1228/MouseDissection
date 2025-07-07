@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Skin : MonoBehaviour
 {
@@ -11,13 +12,9 @@ public class Skin : MonoBehaviour
         this.GetComponent<MeshRenderer>().material = RegMaterial;
         this.GetComponent<Collider>().enabled = true;
 
-        GameObject[] organs = GameObject.FindGameObjectsWithTag("Organs");
-        foreach (GameObject organ in organs) {
-            organ.GetComponent<MeshRenderer>().material = FleshMaterial;
-            organ.GetComponent<Collider>().enabled = true;
-        }
-
         GameObject.Find("Bone").GetComponent<MeshRenderer>().material = BoneMaterial;
         GameObject.Find("Bone").GetComponent<Collider>().enabled = true;
+
+        GameObject.Find("VisibilitySlider").GetComponent<Slider>().value = 0;
     }
 }
