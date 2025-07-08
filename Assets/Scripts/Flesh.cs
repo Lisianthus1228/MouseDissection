@@ -12,6 +12,8 @@ public class Flesh : MonoBehaviour
     {
         GameObject.Find("Uncut").GetComponent<MeshRenderer>().material = ClearMaterial;
         GameObject.Find("Uncut").GetComponent<Collider>().enabled = false;
+        GameObject.Find("Open").GetComponent<MeshRenderer>().material = ClearMaterial;
+        GameObject.Find("Open").GetComponent<Collider>().enabled = false;
 
         GameObject.Find("Bone").GetComponent<MeshRenderer>().material = TransMaterial;
         GameObject.Find("Bone").GetComponent<Collider>().enabled = false;

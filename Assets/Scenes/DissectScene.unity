@@ -3096,6 +3096,7 @@ GameObject:
   - component: {fileID: 4205204267025547396}
   - component: {fileID: 2143454255075505230}
   - component: {fileID: 4205204267025547397}
+  - component: {fileID: 4205204267025547398}
   m_Layer: 0
   m_Name: Open
   m_TagString: Untagged
@@ -3281,6 +3282,27 @@ MonoBehaviour:
   RegMaterial: {fileID: 2100000, guid: 951f326b040cade4fa64463de8509f2d, type: 2}
   FleshMaterial: {fileID: 2100000, guid: f697553f28d83244da7ba49920b793fc, type: 2}
   BoneMaterial: {fileID: 2100000, guid: f6a8a5b333ae5fc45adc262406f8d30f, type: 2}
+--- !u!65 &4205204267025547398
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486362620261864859}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 2.0000005, z: 2.1000004}
+  m_Center: {x: 0, y: 0, z: 0.050000023}
 --- !u!4 &5811424457002437014
 Transform:
   m_ObjectHideFlags: 0
