@@ -3,20 +3,14 @@ using UnityEngine.UI;
 
 public class Skin : MonoBehaviour
 {
-    // Integumentary View
-    public Material RegMaterial;
-    public Material FleshMaterial;
-    public Material BoneMaterial;
+    public GameObject mouse_skin;
+    public GameObject mouse_cut_skin;
 
-    public void ToggleVisiblity() {
-        GameObject.Find("Uncut").GetComponent<MeshRenderer>().material = RegMaterial;
-        GameObject.Find("Uncut").GetComponent<Collider>().enabled = true;
-        GameObject.Find("Open").GetComponent<MeshRenderer>().material = RegMaterial;
-        GameObject.Find("Open").GetComponent<Collider>().enabled = true;
+    public void CutOpen() {
+        mouse_skin.GetComponent<MeshRenderer>().enabled = false;
+        mouse_skin.GetComponent<BoxCollider>().enabled = false;
 
-        GameObject.Find("Bone").GetComponent<MeshRenderer>().material = BoneMaterial;
-        GameObject.Find("Bone").GetComponent<Collider>().enabled = true;
-
-        GameObject.Find("VisibilitySlider").GetComponent<Slider>().value = 0;
+        mouse_cut_skin.GetComponent<MeshRenderer>().enabled = true;
+        mouse_cut_skin.GetComponent<MeshRenderer>().material.color = mouse_skin.GetComponent<MeshRenderer>().material.color;
     }
 }

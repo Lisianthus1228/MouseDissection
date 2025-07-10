@@ -65,10 +65,7 @@ public class Scissors : MonoBehaviour
         if (state == "idle" && !cut_open) state = "anim_begin";
     }
     void OpenMouse() {
-        GameObject.Find("Uncut").GetComponent<MeshRenderer>().enabled = false;
-        GameObject.Find("Uncut").GetComponent<BoxCollider>().enabled = false;
-
-        GameObject.Find("Open").GetComponent<MeshRenderer>().enabled = true;
+        GameObject.Find("Skin").GetComponent<Skin>().CutOpen();
     }
 
     void LerpPos(Vector3 new_pos, float lerp_speed) {
