@@ -835,10 +835,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zoomSpeed: 8
   minFov: 10
-  maxFov: 67
+  maxFov: 70
   minOrthographicSize: 1
   maxOrthographicSize: 20
-  turnSpeed: 4
+  turnSpeed: 5
   target: {fileID: 1818760849}
 --- !u!1 &355664533
 GameObject:
@@ -1212,7 +1212,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 608373125}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -2504,7 +2504,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1818760849}
   m_Layer: 0
-  m_Name: CameraPivot
+  m_Name: Camera Pivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2784,6 +2784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc187db47c35f84481959b7cb0c9029, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inspectableData: {fileID: 0}
 --- !u!1 &1997482039
 GameObject:
   m_ObjectHideFlags: 0
@@ -3316,8 +3317,8 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 263455906}
-  - {fileID: 1380540668}
   - {fileID: 410087041}
+  - {fileID: 1380540668}
   - {fileID: 553853791}
   - {fileID: 1262884537}
   - {fileID: 330585546}
