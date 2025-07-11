@@ -3,20 +3,19 @@ using CTL_Intern;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using UnityEngine.EventSystems;
 
 public class UIManager : MonoBehaviour
 {
     [Header("UI Elements")]
-    public GameObject infoBox;
+    public GameObject nameBox;
+    public TMP_Text nameBoxText;
     public TMP_Text infoBoxText;
-    public TMP_Text titleBoxText;
     
     [Header("Default Text")]
     public string defaultText = "Mouse Dissection Mockup";
 
-    private Image infoBoxImage;
-    private static UIManager instance; // We are going to treat this as a singleton so that there only exist ONE instance of this class!
+    private Image nameBoxImage;
+    private static UIManager _instance; // We are going to treat this as a singleton so that there only exist ONE instance of this class!
 
     /**
      * This should simplify the code across any interactables that requires to display text in the User Interfacaes through a singleton 
@@ -26,31 +25,31 @@ public class UIManager : MonoBehaviour
     // --- Singleton and Initialisation ---
     private void Awake()
     {
-        if (instance != null && instance != this)
+        if (_instance != null && _instance != this)
         {
             Destroy(gameObject);
             return;
         }
-        instance = this;
+        _instance = this;
     }
 
     private void Start()
     {
 
-        if (infoBox != null)
+        if (nameBox != null)
         {
-            infoBoxImage = infoBox.GetComponent<Image>();
-            infoBoxImage.enabled = false;
+            nameBoxImage = nameBox.GetComponent<Image>();
+            nameBoxImage.enabled = false;
         }
         
-        if (infoBoxText != null)
+        if (nameBoxText != null)
         {
-            infoBoxText.text = "";
+            nameBoxText.text = "";
         }
 
-        if (titleBoxText != null)
+        if (infoBoxText != null)
         {
-            titleBoxText.text = defaultText;
+            infoBoxText.text = defaultText;
         }
     }
 
@@ -59,29 +58,44 @@ public class UIManager : MonoBehaviour
     #region Public Calling Methods
     
     // Passes a string into the info box when called and provided with a string
-    public static void SetInfoText(InspectableData inspectable)
+    public static void SetNameBox(String text)
     {
-        if (instance == null || string.IsNullOrEmpty(inspectable.description)) return;
+        if (_instance == null || string.IsNullOrEmpty(text)) return;
 
-        instance.infoBoxText.text = inspectable.description;
-        instance.infoBoxImage.enabled = true;
+        _instance.nameBoxText.text = text;
+        _instance.nameBoxImage.enabled = true;
     }
     
-    // Removes the info box when called
-    public static void HideInfoBox()
+    // Removes the name box when called
+    public static void ClearInformations()
     {
-        if (instance == null) return;
+        if (_instance == null) return;
         
-        instance.infoBoxText.text = "";
-        instance.infoBoxImage.enabled = false;
+        _instance.nameBoxText.text = "";
+        _instance.nameBoxImage.enabled = false;
+        _instance.infoBoxText.text = _instance.defaultText;
     }
     
     // Passes string to set the Title
-    public static void SetTitle(InspectableData inspectable)
+    public static void SetInfoBox(String text)
     {
-        if (instance == null) return;
+        if (_instance == null) return;
 
-        instance.titleBoxText.text = string.IsNullOrEmpty(inspectable.name) ? instance.defaultText : inspectable.name;
+        _instance.infoBoxText.text = string.IsNullOrEmpty(text) ? _instance.defaultText : text;
+    }
+
+    // Used for filling the textbox and title for an Organ
+    public static void SetOrganDetails(InspectableData inspectable)
+    {
+        if (_instance == null) return;
+        SetNameBox(inspectable.name);
+        SetInfoBox(inspectable.description);
+    }
+
+    public static void SetToolDetails(InspectableData inspectable)
+    {
+        if (_instance == null) return;
+        SetNameBox(inspectable.name + " (Click to use)");
     }
     #endregion
 }
