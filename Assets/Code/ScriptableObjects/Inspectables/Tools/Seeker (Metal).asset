@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c351db50e5cb63448c96a294897a730, type: 3}
-  m_Name: HamburgerData
+  m_Name: Seeker (Metal)
   m_EditorClassIdentifier: 
-  inspectionPrefab: {fileID: 1040685752950133855, guid: a86653a7646a53b438daf2989a1615da, type: 3}
-  name: Hamburger
-  description: Go to bed, Jack.
+  inspectionPrefab: {fileID: 0}
+  name: Seeker (Metal)
+  description: 

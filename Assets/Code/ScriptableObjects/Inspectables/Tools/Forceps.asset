@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c351db50e5cb63448c96a294897a730, type: 3}
-  m_Name: BananaData
+  m_Name: Forceps
   m_EditorClassIdentifier: 
-  inspectionPrefab: {fileID: 4848167346082781003, guid: a574413b0bb34f44c8a95f7aa703224f, type: 3}
-  name: Banana
-  description: This is an apple.
+  inspectionPrefab: {fileID: 0}
+  name: Forceps
+  description: 
