@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5361ccc4-4cfb-4daf-8525-7c9d87d63504" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Art/Materials/Furniture/Metal_Handle.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Materials/Furniture/Metal_Handle.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Materials/Furniture/Wood.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Materials/Furniture/Wood.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Models/Awls/awls.blend" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Models/Awls/awls.blend.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Models/Forceps.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Models/Forceps/forceps.blend" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Models/Forceps/forceps.blend.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Models/Seekers.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Models/Seekers/seeker_1.blend" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Models/Seekers/seeker_1.blend.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Models/Seekers/seeker_2.blend" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Models/Seekers/seeker_2.blend.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Sprites/RoundEdges.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Sprites/RoundEdges.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Sprites/heartu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Sprites/heartu.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Sprites/scalpel (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Sprites/scalpel (1).png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Sprites/stomach.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Sprites/stomach.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Sprites/urinary-system.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Sprites/urinary-system.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Sprites/uterus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Sprites/uterus.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Sprites/whiter_mouse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Sprites/whiter_mouse.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Textures/Metal_Pattern.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Textures/Metal_Pattern/DiamondPlate003_1K-JPG_Color.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Textures/Metal_Pattern/DiamondPlate003_1K-JPG_Color.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Textures/Metal_Pattern/DiamondPlate003_1K-JPG_Displacement.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Textures/Metal_Pattern/DiamondPlate003_1K-JPG_Displacement.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Textures/Metal_Pattern/DiamondPlate003_1K-JPG_Metalness.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Textures/Metal_Pattern/DiamondPlate003_1K-JPG_Metalness.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Textures/Metal_Pattern/DiamondPlate003_1K-JPG_NormalGL.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Textures/Metal_Pattern/DiamondPlate003_1K-JPG_NormalGL.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Textures/Metal_Pattern/DiamondPlate003_1K-JPG_Roughness.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Textures/Metal_Pattern/DiamondPlate003_1K-JPG_Roughness.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Textures/Wood.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Textures/Wood/Wood003_1K-JPG_Color.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Textures/Wood/Wood003_1K-JPG_Color.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Textures/Wood/Wood003_1K-JPG_Displacement.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Textures/Wood/Wood003_1K-JPG_Displacement.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Textures/Wood/Wood003_1K-JPG_NormalGL.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Textures/Wood/Wood003_1K-JPG_NormalGL.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Textures/Wood/Wood003_1K-JPG_Roughness.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Art/Textures/Wood/Wood003_1K-JPG_Roughness.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Awls.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Awls.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Level/Scenes/Main Copy.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Level/Scenes/Main Copy.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Art/Materials/Metal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../Art/Materials/Furniture/Metal.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Art/Materials/Metal.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Art/Materials/Furniture/Metal.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Art/Materials/Table.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../../Art/Materials/Furniture/Table.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Art/Materials/Table.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Art/Materials/Furniture/Table.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Art/Models/Scissors/Scissors.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scissors.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Art/Models/Scissors/Scissors.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Scissors.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Body.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Art/Models/Awls.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Body/Bone.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Body/Bone.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Body/Flesh.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Body/Flesh.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Body/Skin.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Body/Skin.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controls/MouseXray.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controls/MouseXray.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/InfoBox.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/InfoBox.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/InfoBoxHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UI/InfoBoxHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UI/UIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Level/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../../Level/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Packages/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../Packages/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Awls.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2zvcbi7V3gGZMkKLdXgAqOxC3Bx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Merging script__refactoring",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5361ccc4-4cfb-4daf-8525-7c9d87d63504" name="Changes" comment="" />
+      <created>1752615060724</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1752615060724</updated>
+      <workItem from="1752615063141" duration="21000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -12,6 +12,8 @@ public class Scissors : MonoBehaviour
 
     public Transform pivot_start_cut;
     public Transform pivot_end_cut;
+    public GameObject mouse_skin;
+    public GameObject mouse_cut_skin;
 
     void Start() {
         mAnimator = GetComponent<Animator>();
@@ -35,21 +37,21 @@ public class Scissors : MonoBehaviour
         switch (state) {
             case "anim_begin":
                 hitbox.enabled = false;
-                LerpPos(pivot_start_cut.position, 0.045f);
-                LerpRot(pivot_start_cut.rotation, 0.03f);
+                LerpPos(this.gameObject, pivot_start_cut.position, 0.045f);
+                LerpRot(this.gameObject, pivot_start_cut.rotation, 0.03f);
                 if (transform.position == pivot_start_cut.position) {
                     state = "anim_cut";
                 }
                 break;
             case "anim_cut":
-                TranslatePos(pivot_end_cut.position, 1.2f);
+                TranslatePos(this.gameObject, pivot_end_cut.position, 1.2f);
                 if (transform.position == pivot_end_cut.position) {
                     state = "anim_end";
                 }
                 break;
             case "anim_end":
-                LerpPos(ini_position, 0.03f);
-                LerpRot(ini_rotation, 0.03f);
+                LerpPos(this.gameObject, ini_position, 0.03f);
+                LerpRot(this.gameObject, ini_rotation, 0.03f);
                 OpenMouse();
                 if (transform.position == ini_position) {
                     state = "idle";
@@ -65,24 +67,31 @@ public class Scissors : MonoBehaviour
         if (state == "idle" && !cut_open) state = "anim_begin";
     }
     void OpenMouse() {
-        GameObject.Find("Skin").GetComponent<Skin>().CutOpen();
+        mouse_skin.GetComponent<MeshRenderer>().enabled = false;
+        mouse_skin.GetComponent<BoxCollider>().enabled = false;
+
+        mouse_cut_skin.GetComponent<MeshRenderer>().enabled = true;
+        mouse_cut_skin.GetComponent<MeshRenderer>().material.color = mouse_skin.GetComponent<MeshRenderer>().material.color;
     }
 
-    void LerpPos(Vector3 new_pos, float lerp_speed) {
-        transform.position = Vector3.Lerp(transform.position, new_pos, lerp_speed);
-        if (Vector3.Distance(transform.position, new_pos) < 0.01f) {
-            transform.position = new_pos;
+    void LerpPos(GameObject obj, Vector3 new_pos, float lerp_speed)
+    {
+        obj.transform.position = Vector3.Lerp(obj.transform.position, new_pos, lerp_speed);
+        if (Vector3.Distance(obj.transform.position, new_pos) < 0.01f)
+        {
+            obj.transform.position = new_pos;
         }
     }
-
-    void LerpRot(Quaternion new_rot, float lerp_speed) {
-        transform.rotation = Quaternion.Lerp(transform.rotation, new_rot, lerp_speed);
+    void LerpRot(GameObject obj, Quaternion new_rot, float lerp_speed)
+    {
+        obj.transform.rotation = Quaternion.Lerp(obj.transform.rotation, new_rot, lerp_speed);
     }
-
-    void TranslatePos(Vector3 new_pos, float speed) {
-        transform.position = Vector3.MoveTowards(transform.position, new_pos, speed * Time.deltaTime);
-        if (Vector3.Distance(transform.position, new_pos) <= speed) {
-            transform.position = new_pos;
+    void TranslatePos(GameObject obj, Vector3 new_pos, float speed)
+    {
+        obj.transform.position = Vector3.MoveTowards(obj.transform.position, new_pos, speed * Time.deltaTime);
+        if (Vector3.Distance(obj.transform.position, new_pos) <= speed)
+        {
+            obj.transform.position = new_pos;
         }
     }
 }

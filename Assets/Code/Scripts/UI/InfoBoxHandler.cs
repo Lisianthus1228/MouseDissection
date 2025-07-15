@@ -55,6 +55,16 @@ public class InfoBoxHandler : MonoBehaviour, IPointerEnterHandler, IPointerExitH
             case "Scissors":
                 tmp_info_text.text = "Dissecting Scissors";
                 break;
+            case "Seeker_Wood":
+            case "Seeker_Metal":
+                tmp_info_text.text = "Seekers";
+                break;
+            case "Awls":
+                tmp_info_text.text = "Awls";
+                break;
+            case "Forceps":
+                tmp_info_text.text = "Forceps";
+                break;
 
             default: // If no highlight text provided just hide the info box.
                 infoBoxImage.enabled = false;
