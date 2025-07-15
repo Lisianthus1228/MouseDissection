@@ -8,12 +8,11 @@ public abstract class Interactable : MonoBehaviour
     public InspectableData inspectableData;
     
     [Header("Outline Settings")]
+    [Tooltip("Outline Data")]
+    public OutlineData outlineData;
+    
     [Tooltip("The Outline component attached to this GameObject.")]
     [SerializeField] protected Outline outline;
-    [Tooltip("The color of the outline when the mouse hovers over the object.")]
-    public Color outlineColor =  Color.cyan;
-    [Tooltip("The width of the outline when the mouse hovers over the object.")]
-    public float outlineWidth = 8.5f;
     
     // We use 'virtual' so child classes can override this if they need to.
     
@@ -21,8 +20,8 @@ public abstract class Interactable : MonoBehaviour
     {
         // Getting the Outline component and setting its default parameters.
         outline = GetComponent<Outline>();
-        outline.OutlineColor = outlineColor;
-        outline.OutlineWidth = outlineWidth;
+        outline.OutlineColor = outlineData.colour;
+        outline.OutlineWidth = outlineData.width;
         outline.enabled = false; // The outline is initially disabled.
     }
 

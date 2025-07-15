@@ -325,9 +325,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inspectableData: {fileID: 11400000, guid: a99d72c4775a6e142ade702edb0db6df, type: 2}
+  outlineData: {fileID: 11400000, guid: 2db2f14ac8bf28b488a34dbd4ed582e3, type: 2}
   outline: {fileID: 0}
-  outlineColor: {r: 0, g: 1, b: 1, a: 1}
-  outlineWidth: 8.5
 --- !u!114 &100291643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -986,9 +985,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inspectableData: {fileID: 11400000, guid: 5c925c404b90d144b8d4eee2b6fbd1ff, type: 2}
+  outlineData: {fileID: 11400000, guid: 2db2f14ac8bf28b488a34dbd4ed582e3, type: 2}
   outline: {fileID: 0}
-  outlineColor: {r: 0, g: 1, b: 1, a: 1}
-  outlineWidth: 8.5
 --- !u!114 &357143591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1296,7 +1294,6 @@ Transform:
   - {fileID: 290596437}
   - {fileID: 5811424457002437014}
   - {fileID: 543450652026905514}
-  - {fileID: 1256176250}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &608373125
@@ -1994,7 +1991,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 553853791}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: a492ecd0bcccba04f9531bf92844dec3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2022,7 +2019,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a492ecd0bcccba04f9531bf92844dec3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a492ecd0bcccba04f9531bf92844dec3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2072,11 +2069,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1256176256}
   m_SourcePrefab: {fileID: 100100000, guid: a492ecd0bcccba04f9531bf92844dec3, type: 3}
---- !u!4 &1256176250 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a492ecd0bcccba04f9531bf92844dec3, type: 3}
-  m_PrefabInstance: {fileID: 1256176249}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1256176251 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a492ecd0bcccba04f9531bf92844dec3, type: 3}
@@ -2152,9 +2144,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inspectableData: {fileID: 11400000, guid: 70adc113be29df74c844231bb7fed62b, type: 2}
+  outlineData: {fileID: 11400000, guid: 9eb20b4e451bfc640832df3de0df0ecb, type: 2}
   outline: {fileID: 0}
-  outlineColor: {r: 0, g: 1, b: 1, a: 1}
-  outlineWidth: 0
 --- !u!114 &1256176257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2700,9 +2691,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inspectableData: {fileID: 11400000, guid: aa94d5b80d81d8c49aa45a8d8b1db528, type: 2}
+  outlineData: {fileID: 11400000, guid: 2db2f14ac8bf28b488a34dbd4ed582e3, type: 2}
   outline: {fileID: 0}
-  outlineColor: {r: 0, g: 1, b: 1, a: 1}
-  outlineWidth: 8.5
 --- !u!114 &1800031146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3287,3 +3277,4 @@ SceneRoots:
   - {fileID: 1451059929}
   - {fileID: 779531901}
   - {fileID: 88018903}
+  - {fileID: 1256176249}
